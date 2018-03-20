@@ -1,0 +1,99 @@
+@reset @regression @website @errormessagessignup
+Feature: Sign Up Verify That Error Message Is Shown If Any Of The Mandatory Field Is Left Blank
+[34mCurrent Page URL is https://uatsite.woolworths.com.au/shop/signup[0m
+
+  Scenario: Sign Up Verify That Error Message Is Shown If Any Of The Mandatory Field Is Left Blank                               [90m# Sign_Up_Error_Message_Is_Shown_If_Any_Of_The_Mandatory_Field_Is_Left_Blank.feature:5[0m
+    [32mGiven [0m[32mI am on the Woolworths home page[0m                                                                                       [90m# HomeSteps.IAmOnhomePage()[0m
+    [32mWhen [0m[32mI click on Login Profile on home page[0m                                                                                   [90m# HomeSteps.iClickOnLoginProfileOnHomePage()[0m
+    [32mAnd [0m[32mI click on sign up in login page[0m                                                                                         [90m# LoginSteps.iClickOnSignUpInLoginPage()[0m
+    #    Then I click on Sign Up
+    [31mAnd [0m[31mI should see the valid message "[0m[31m[1mThe sign up was not successful.[0m[31m" and "[0m[31m[1mThere are 6 field(s) that require your attention.[0m[31m"[0m [90m# SignUpSteps.iShouldSeeTheValidMessageAnd(String,String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: Timed out after 20 seconds. Unable to locate the element
+      	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:91)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+      	at pages.signupPage.valdation_msg(signupPage.java:280)
+      	at steps.SignUpSteps.iShouldSeeTheValidMessageAnd(SignUpSteps.java:131)
+      	at ✽.And I should see the valid message "The sign up was not successful." and "There are 6 field(s) that require your attention."(Sign_Up_Error_Message_Is_Shown_If_Any_Of_The_Mandatory_Field_Is_Left_Blank.feature:11)
+      Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".formValidationSummary-userMessageAndIcon"}
+        (Session info: chrome=65.0.3325.146)
+        (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.9.60-linuxkit-aufs x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+      System info: host: 'dev34s-MacBook-Pro-10.local', ip: 'fe80:0:0:0:1889:4aa1:129f:6326%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '9.0.1'
+      Driver info: org.openqa.selenium.remote.RemoteWebDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.146, webStorageEnabled: true, webdriver.remote.sessionid: db1dcb3b0d9dd7a8606f972e39e...}
+      Session ID: db1dcb3b0d9dd7a8606f972e39ee8743
+      *** Element info: {Using=css selector, value=.formValidationSummary-userMessageAndIcon}
+      	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+      	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:41)
+      	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:157)
+      	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)
+      	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:87)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+      	at pages.signupPage.valdation_msg(signupPage.java:280)
+      	at steps.SignUpSteps.iShouldSeeTheValidMessageAnd(SignUpSteps.java:131)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+      	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+      [0m
+    [36mAnd [0m[36mI should see error message for first name "[0m[36m[1mFirst name is required.[0m[36m"[0m                                                      [90m# SignUpSteps.iShouldSeeErrorMessageForFirstName(String)[0m
+    [36mAnd [0m[36mI should see error message for last name "[0m[36m[1mLast name is required.[0m[36m"[0m                                                        [90m# SignUpSteps.iShouldSeeErrorMessageForLastName(String)[0m
+    [36mAnd [0m[36mI should see error message for email address "[0m[36m[1mEmail address is required.[0m[36m"[0m                                                [90m# SignUpSteps.iShouldSeeErrorMessageForEmailAddress(String)[0m
+    [36mAnd [0m[36mI should see error message for password "[0m[36m[1mPassword is required.[0m[36m"[0m                                                          [90m# SignUpSteps.iShouldSeeErrorMessageForPassword(String)[0m
+    [36mAnd [0m[36mI should see error message for preferred contact number "[0m[36m[1mPhone number is required.[0m[36m"[0m                                      [90m# SignUpSteps.iShouldSeeErrorMessageForPreferredContactNumber(String)[0m
+    [36mAnd [0m[36mI should see error message for delivery address "[0m[36m[1mAddress is required.[0m[36m"[0m                                                   [90m# SignUpSteps.iShouldSeeErrorMessageForDeliveryAddress(String)[0m

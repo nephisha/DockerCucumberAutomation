@@ -1,0 +1,49 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<extentreports>-->
+    <!--<configuration>-->
+        <!--&lt;!&ndash; report theme &ndash;&gt;-->
+        <!--&lt;!&ndash; standard, dark &ndash;&gt;-->
+        <!--<theme>standard</theme>-->
+
+        <!--&lt;!&ndash; document encoding &ndash;&gt;-->
+        <!--&lt;!&ndash; defaults to UTF-8 &ndash;&gt;-->
+        <!--<encoding>UTF-8</encoding>-->
+
+        <!--&lt;!&ndash; protocol for script and stylesheets &ndash;&gt;-->
+        <!--&lt;!&ndash; defaults to https &ndash;&gt;-->
+        <!--<protocol>https</protocol>-->
+
+        <!--&lt;!&ndash; title of the document &ndash;&gt;-->
+        <!--<documentTitle>ExtentReports</documentTitle>-->
+
+        <!--&lt;!&ndash; report name - displayed at top-nav &ndash;&gt;-->
+        <!--<reportName>JUnit TestRunner : Cucumber Report</reportName>-->
+
+        <!--&lt;!&ndash; report headline - displayed at top-nav, after reportHeadline &ndash;&gt;-->
+        <!--<reportHeadline></reportHeadline>-->
+
+        <!--&lt;!&ndash; globalPage date format override &ndash;&gt;-->
+        <!--&lt;!&ndash; defaults to yyyy-MM-dd &ndash;&gt;-->
+        <!--<dateFormat>yyyy-MM-dd</dateFormat>-->
+
+        <!--&lt;!&ndash; globalPage time format override &ndash;&gt;-->
+        <!--&lt;!&ndash; defaults to HH:mm:ss &ndash;&gt;-->
+        <!--<timeFormat>HH:mm:ss</timeFormat>-->
+
+        <!--&lt;!&ndash; custom javascript &ndash;&gt;-->
+        <!--<scripts>-->
+            <!--<![CDATA[-->
+        <!--$(document).ready(function() {-->
+
+        <!--});-->
+      <!--]]>-->
+        <!--</scripts>-->
+
+        <!--&lt;!&ndash; custom styles &ndash;&gt;-->
+        <!--<styles>-->
+            <!--<![CDATA[-->
+
+      <!--]]>-->
+        <!--</styles>-->
+    <!--</configuration>-->
+<!--</extentreports>-->
